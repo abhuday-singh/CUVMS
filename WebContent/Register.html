@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>CUVMS Registration</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="reg_files/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="reg_files/form-validation.css" rel="stylesheet">
+  <style></style></head>
+
+  <body class="bg-light">
+  <form action="SaveInfo" method="post">
+
+    <div class="container">
+      <div class="py-5 text-center">
+        
+        <h1 style="color:red; align:center;">CHANDIGARH <span style="color:black"> UNIVERSITY
+			</span><br/><span style="color:black">VISITOR MANAGEMENT SYSTEM</span> 
+		</h1>
+        
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Personal Inforamtion: </h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <label for="Name">Name</label>
+                <input class="form-control" id="Name" name="name" placeholder="Name" required="" type="text">
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="country">Gender</label>
+                <select class="custom-select d-block w-100" name="gender" id="country" required="">
+                  <option value="" selected="selected">Select</option>
+                  <option>Male</option>
+                   <option>Female</option>
+                  <option>Other</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please choose a valid option
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state">Date Of Birth</label>
+                <input class="custom-select d-block w-100" id="dob" name="dob" type="date" required="">
+                  
+                
+                <div class="invalid-feedback">
+                  Please provide a valid date
+                </div>
+              </div>
+              <div class="col-md-5 mb-3">
+                <label for="zip">Mobile no</label>
+                <input class="form-control" id="zip" name="mobno" placeholder="Mobile Number" required="" type="text">
+                <div class="invalid-feedback">
+                  Mobile no required.
+                </div>
+              </div>
+            </div>
+              
+              
+              
+
+            <div class="mb-3">
+              <label for="email">Email</label>
+              <input class="form-control" name="email" id="email" placeholder="you@example.com" type="email">
+              <div class="invalid-feedback">
+                Please enter a valid email address.
+              </div>
+            </div>
+
+              
+              
+              
+            <div class="mb-3">
+              <label for="address">Address</label>
+              <input class="form-control" name="address" id="address" placeholder="1234 Bose St, New Delhi" required="" type="text">
+              <div class="invalid-feedback">
+                Please enter your address.
+              </div>
+            </div>
+
+            
+            <hr class="mb-4">
+            
+            <div class="custom-control custom-checkbox">
+              <input class="custom-control-input" id="save-info" type="checkbox">
+              <label class="custom-control-label" for="save-info">Save this information for next time</label>
+            </div>
+              
+            <hr class="mb-4">
+              <br>
+            <h4 class="mb-3">Visiting Inforamtion:</h4>
+
+                <div class="col-md-12 mb-2">
+                <label for="country">Department</label>
+                <select class="custom-select d-block w-100" name="department" id="country" required="">
+                  <option value="" selected="selected">Select</option>
+                  <option>Admission</option>
+                   <option>Academics</option>
+                  <option>Accounts</option>
+                    <option>Student Welfare</option>
+                    <option>Human Resource</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please choose a valid option
+                </div>
+              </div>
+                
+                
+                
+                
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Visiting Purpose</label>
+                <input class="form-control" name="purpose" id="cc-name" placeholder="Why are you here?" required="" type="text">
+                <div class="invalid-feedback">
+                  Purpose is required
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Date</label>
+                <input class="form-control" name="vdate" id="date" placeholder="" required="" type="date">
+             <br>
+             <center>
+                <hr class="mb-2">
+                  <button class="btn btn-primary btn-lg btn-block" type="submit" onclick="alert('Registration successfull. Your Unique Id has been sent to your e-mail. Use your UID for LogIn.')">Submit</button>
+                  <button class="btn btn-primary btn-lg btn-block" type="reset">Reset</button>
+              </center>
+              </div>
+            </div>
+            
+            
+              
+             
+          </form>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 2018 Abhuday Singh  </p>
+        
+      </footer>
+    </div>
+      
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="reg_files/jquery-3.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="reg_files/popper.js"></script>
+    <script src="reg_files/bootstrap.js"></script>
+    <script src="reg_files/holder.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  
+</form>
+</body></html>
